@@ -1,2 +1,1 @@
-staj-deneme
-===========
+--Staj Yönetim Sistemi.--
