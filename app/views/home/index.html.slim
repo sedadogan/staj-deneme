@@ -1,9 +1,26 @@
-.arkaplan
-        h1 Staj Yönetim Sistemi
-        h3 Merhaba Staj :) :) 
-        - if current_user
-          = current_user.email
-          '
-          = link_to "Çıkış Yap", destroy_user_session_path, :method => :delete
-        - else
-          = link_to "Giriş Yap", index_path
+.navbar.navbar1.navbar-inverse
+  .navbar-inner
+    a.brand 19 Mayıs Üniversitesi
+    .nav-collapse.collapse
+      a.btn.btn-navbar data-target=".nav-collapse" data-toggle="collapse"
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      ul.nav
+        li.active
+          a href="kurum" tabindex="-1" Kurum
+        li.active
+          a href="komisyon" tabindex="-1" Komisyon
+        li.active
+          a href="ogrenci" tabindex="-1" Öğrenci
+.container-fluid
+  .carousel-inner
+    .item.achieve
+      img alt="" src="http://twitter.github.com/bootstrap/assets/img/examples/slide-03.jpg"
+        .container
+          .carousel-caption 
+            h1 Staj yönetim sistemi
+            p.Staj Yönetim Sistemimize hoşgeldiniz.Sistemimiz şu an yapım aşamasındadır. 
+       
+
+

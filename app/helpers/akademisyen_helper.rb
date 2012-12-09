@@ -1,0 +1,2 @@
+module AkademisyenHelper
+end

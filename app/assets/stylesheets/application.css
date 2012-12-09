@@ -12,4 +12,6 @@
  *= require_tree .
  */
 @import "home.css.scss";
-@import "user.css.scss";
+@import "kurum.css.scss";
+@import "komisyon.css.scss";
+@import "ogrenci.css.scss";

@@ -1,0 +1,33 @@
+.navbar.navbar1.navbar-inverse
+  .navbar-inner
+    a.brand 19 Mayıs Üniversitesi
+    ul.nav.nav-tabs.pull-right
+      li.dropdown
+        a.dropdown-toggle data-toggle="dropdown" href="#"
+          | Giriş
+          b.caret
+        ul.dropdown-menu aria-labelledby="dropdownMenu" role="menu"
+          li.active
+            a href="kurum" tabindex="-1" Kurum
+          li.active
+            a href="komisyon" tabindex="-1" Komisyon
+          li.active
+            a href="ogrenci" tabindex="-1" Öğrenci
+.arkaplan
+  h2
+    center Kurum Giriş Sayfası
+  form.form-horizontal
+    .control-group
+      label.control-label for="inputEmail"
+      .controls
+        input#inputEmail placeholder="Email" type="text"
+    .control-group
+      label.control-label for="inputPassword"
+      .controls
+        input#inputPassword placeholder="******" type="password"
+    .control-group
+      .controls
+        label.checkbox
+          input type="checkbox"
+            | Beni Hatırla
+        button.btn type="submit"
