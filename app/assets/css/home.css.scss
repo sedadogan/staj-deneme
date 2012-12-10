@@ -1,11 +1,12 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.body {
+body {
   padding-bottom: 40px;
   color: #5a5a5a;
+  background-color: #e5e5e5;
 }
-/*
+
 /* Remove border and change up box shadow for more contrast */
 .navbar .navbar-inner {
   border: 0;
@@ -41,7 +42,7 @@
   position: absolute;
   right: 0;
   bottom: 0;
-  eft: 0;
+  left: 0;
 }
  
 .carousel-control {
@@ -205,4 +206,10 @@
    }
  
 }
-    
+.arkaplan{
+padding:30px;
+background-color:#eeeeee;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+}

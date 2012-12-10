@@ -1,13 +1,18 @@
 Proje::Application.routes.draw do
-  get "akademisyen/index"
-
-  get "admin/index"
+  #devise_for :users
+  get "komisyon/index"
+  
+  get "kurum/index"
 
   get "ogrenci/index"
 
   get "home/index"
-  match "admin" => "admin#index"
-  match "akademisyen" => "akademisyen#index"
+  
+  get "ogrenci_giris/index"
+
+  match "/:email/index" => "ogrenci#index"
+  match "kurum" => "kurum#index"
+  match "komisyon" => "komisyon#index"
   match "ogrenci" => "ogrenci#index"
   root :to => "home#index"
   # The priority is based upon order of creation:
