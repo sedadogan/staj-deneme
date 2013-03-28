@@ -16,7 +16,6 @@ Staj::Application.routes.draw do
   match "/student/index" => "student#index"
   match "/student/proselects" => "student#proselects"
   match "/student/settings" => "student#settings"
-  match "/student/register" => "student#register"
   match "/student/reports" => "student#reports"
   match "/student/probook" => "student#probook"
   match "/student/documents" => "student#documents"
