@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Proje::Application.config.secret_token = 'c722435606754d7bce6a8a212e454afa68bcad15c4a1df7e487386c6a957598f53c39f6990c2a1e7ceeef90f2fdd64e31fc2f6e7283ecb4711e7ef184cff8f35'
+Staj::Application.config.secret_token = '03ae1edbfbb2eaa1a889d0211af2be3ea28ce7019ae06db28ce515df569d0d12f32c66f826e717d5d83188498bca1dc16daf137728cf44cba59e3bd8eb964eaa'

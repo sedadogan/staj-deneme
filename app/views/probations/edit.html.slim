@@ -1,0 +1,8 @@
+.arka
+	- model_class = Probation
+	div class="page-header"
+	  h3=t '.title', :default => t('helpers.titles.edit', :model => model_class.model_name.human, :default => "Edit #{model_class.model_name.human}")
+	= render :partial => "form"
+
+
+

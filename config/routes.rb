@@ -1,20 +1,46 @@
-Proje::Application.routes.draw do
-  #devise_for :users
-  get "komisyon/index"
-  
-  get "kurum/index"
+Staj::Application.routes.draw do
+  root to: "home#index"
 
-  get "ogrenci/index"
+  resources :probations
 
-  get "home/index"
-  
-  get "ogrenci_giris/index"
+  devise_for :users
 
-  match "/:email/index" => "ogrenci#index"
-  match "kurum" => "kurum#index"
-  match "komisyon" => "komisyon#index"
-  match "ogrenci" => "ogrenci#index"
-  root :to => "home#index"
+  get "commission/index"
+  get "institution/index"
+  get "student/index"
+
+  match "/about" => "home#about"
+  match "/contact" => "home#contact"
+
+
+  match "/student/index" => "student#index"
+  match "/student/proselects" => "student#proselects"
+  match "/student/settings" => "student#settings"
+  match "/student/register" => "student#register"
+  match "/student/reports" => "student#reports"
+  match "/student/probook" => "student#probook"
+  match "/student/documents" => "student#documents"
+
+  match "/commission/index" => "commission#index"
+  match "/commission/reports" => "commission#reports"
+  match "/commission/settings" => "commission#settings"
+  match "/commission/users" => "commission#users"
+
+  match "/institution/index" => "institution#index"
+  match "/institution/settings" => "institution#settings"
+  match "/institution/reports" => "institution#reports"
+  match "/institution/requests" => "institution#requests"
+  match "/institution/proselects" => "probations#index"
+  match "/institution/proselects/new" => "probations#new"
+  match "/institution/proselects/:id/edit" => "probations#edit"
+  match "/institution/proselects/:id" => "probations#show", via: :get
+  match "/institution/proselects/:id" => "probations#update", via: :put
+  match "/institution/proselects/:id" => "probations#destroy", via: :delete
+
+
+  #authenticated :user do
+     #root :to => 'home#index'
+  #end
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

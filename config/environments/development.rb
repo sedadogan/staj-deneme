@@ -1,4 +1,4 @@
-Proje::Application.configure do
+Staj::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
   # In the development environment your application's code is reloaded on
@@ -34,4 +34,7 @@ Proje::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+  
+  # deneme olarak eklendi
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 end
