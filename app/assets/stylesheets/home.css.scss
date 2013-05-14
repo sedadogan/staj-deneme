@@ -1,16 +1,16 @@
-// Place all the styles related to the home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
 body {
-  background-color: #dddddd;
+  background-color: #f7f7f7;
+ 
 }
 
 .arkaplan{
 }
+
 /* Navbar links: increase padding for taller navbar */
 .navbar .nav > li > a {
   padding: 15px 20px;
 }
+
 /* Offset the responsive button for proper vertical alignment */
 .navbar .btn-navbar {
   margin-top: 10px;

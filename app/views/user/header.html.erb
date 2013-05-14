@@ -1,0 +1,18 @@
+<% unless request[:action] == 'support' %>
+  <ul class="nav nav-tabs">
+    <li class="<%= "active" if request[:action] == 'index' %>">
+    <a href="/<%= request[:controller] %>"><i class="icon-ok"></i> <span>Menü</span></a>
+    </li>
+    <li class="<%= "active" if request[:action] == 'personal' %>">
+    <a href="/<%= request[:controller] %>/personal"><i class="icon-info-sign"></i> <span>Kişisel Bilgiler</span></a>
+    </li>
+    <li class="<%= "active" if request[:action] == 'password' %>">
+    <a href="/<%= request[:controller] %>/password"><i class="icon-lock"></i> <span>Parola Değiştir</span></a>
+    </li>
+    </li>
+    <li class="<%= "active" if request[:action] == 'institutes' %>">
+    <a href="/<%= request[:controller] %>/institutes"><i class="icon-map-marker"></i> <span>Kurum</span></a>
+    </li>
+  </ul>
+<% end %>
+

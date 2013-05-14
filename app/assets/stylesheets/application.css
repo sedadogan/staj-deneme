@@ -11,6 +11,3 @@
  *= require_self
  *= require_tree .
  */
-@import "home.css.scss";
-@import "user.css.scss";
-

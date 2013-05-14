@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Staj::Application.config.secret_token = '03ae1edbfbb2eaa1a889d0211af2be3ea28ce7019ae06db28ce515df569d0d12f32c66f826e717d5d83188498bca1dc16daf137728cf44cba59e3bd8eb964eaa'
+Atakum::Application.config.secret_token = '280a0e15610bb896b63a489da34374e0bfc93a3f7fba1565f822efe94ad8047dcbe2d284f1ba36d758b74d30d164dc45cd48a9a9d6564744705d8a01297196fa'
